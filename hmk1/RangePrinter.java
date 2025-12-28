@@ -13,9 +13,12 @@ public class RangePrinter {
 
         int i = start + 1;
         while (i < end) {
-            System.out.println(i);
-            i = i + 1;
-        }
+    if (i % 2 == 0) {
+        System.out.println(i);
+    }
+    i = i + 1;
+}
+
     }
 
     public static void main(String[] args) {
@@ -28,3 +31,4 @@ public class RangePrinter {
         input.close();
     }
 }
+
