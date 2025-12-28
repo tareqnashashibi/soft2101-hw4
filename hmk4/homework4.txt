@@ -1,0 +1,55 @@
+STEP b:
+
+Commands used:
+git clone https://github.com/tareqnashashibi/soft2101-hw4.git
+ls
+cd soft2101-hw4
+ls -la
+ls -la .git
+
+Contents of the .git directory:
+HEAD
+config
+description
+hooks
+index
+info
+logs
+objects
+packed-refs
+refs
+
+STEP d:
+
+A .gitignore file was created to prevent unnecessary files from being
+tracked by Git. This includes compiled Java class files, log files,
+temporary files, IDE configuration folders, and build/output directories.
+
+
+STEP f:
+
+git log --oneline --decorate -5
+35158d0 (HEAD -> feature-1) satisfying requirement one
+be5c3ac (main) setting up gitignore
+8866890 (origin/main, origin/HEAD) Initial commit
+
+ls -la hmk1
+total 8
+drwxr-xr-x 1 tareq 197609   0 Dec 28 22:51 ./
+drwxr-xr-x 1 tareq 197609   0 Dec 28 22:51 ../
+-rw-r--r-- 1 tareq 197609 600 Dec 28 22:51 RangePrinter.java
+
+git checkout main
+ls -la hmk1
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+ls: cannot access 'hmk1': No such file or directory
+
+
+git checkout feature-1
+
+STEP j:
+
+git log --oneline --decorate -5
+<PASTE OUTPUT HERE>
