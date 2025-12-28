@@ -13,7 +13,7 @@ public class RangePrinter {
 
         int i = start + 1;
         while (i < end) {
-            if (i % 2 != 0) {
+            if (i % 2 == 0) {
                 System.out.println(i);
             }
             i = i + 1;
